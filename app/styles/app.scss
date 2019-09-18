@@ -1,0 +1,76 @@
+body {
+  background-color: #BADA55;
+  height: 100vh;
+  width: 100vw;	
+  margin: 0;
+  display: flex;
+  flex-direction: column; 
+
+  #cursor {
+    position  : absolute;
+    z-index   : 10000;
+    width     : 40px;
+    height    : 40px;
+    background: transparent url('/images/pizza.gif') 0 0 no-repeat;
+   }
+
+  .header {
+    display: flex;
+    padding: 2em 0;
+    width: 100vw;
+    justify-content: center;    
+  }
+}
+
+
+img {
+  animation: glowing 10000ms infinite;
+}
+
+.table {
+  max-width: 500px;
+  background: black;
+  color: #BADA55;
+  margin: 0 auto;
+  padding: 3em;
+
+  td {
+    padding: 10px;
+    border-bottom: red 2px solid;
+  }
+}
+
+
+.twitter {
+  display: flex;
+  max-width: 500px;
+  justify-content: center;    
+  margin: 0 auto;
+  text-align: center;
+  img {
+    width: 100%;
+  }
+}
+
+.katie {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  justify-content: center; 
+  margin: 0 auto; 
+  color: red;
+}
+
+@keyframes glowing {
+  0% { margin-left: 5em; margin-right: 0; zoom: 100%; }
+  10%  { margin-right: 5em;margin-left: 0; zoom: 100%; }
+  20%  { margin-left: 5em; margin-right: 0;zoom: 100%; }
+  30%  { margin-right: 5em;margin-left: 0; zoom: 100%; }
+  40%  { margin-left: 5em; margin-right: 0;zoom: 100%; }
+  50%  { margin-right: 5em;margin-left: 0; zoom: 100%; }
+  60%  { margin-left: 5em; margin-right: 0;zoom: 100%; }
+  70%  { margin-right: 5em;margin-left: 0; zoom: 100%; }
+  80%  { margin-left: 5em; margin-right: 0;zoom: 100%; }
+  90%  { margin-right: 5em;margin-left: 0; zoom: 100%; }
+  100% { margin-left: 5em; margin-right: 0;zoom: 100%; }
+}
